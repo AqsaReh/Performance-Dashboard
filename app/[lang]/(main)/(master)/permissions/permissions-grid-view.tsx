@@ -114,7 +114,7 @@ export function PermissionsGridView({
                   {module && (
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-muted-foreground">Module:</span>
-                      <Badge variant="secondary" className="text-xs">{module.name}</Badge>
+                      <Badge variant="outline" color="secondary" className="text-xs">{module.name}</Badge>
                     </div>
                   )}
                   <div className="flex items-center justify-between">

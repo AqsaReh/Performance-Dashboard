@@ -29,7 +29,6 @@ yarn-error.log*
 #ignore all env files except
 !.env.local.example
 !.env.example
-.env.local
 .env.development.local 
 
 # vercel
@@ -40,3 +39,4 @@ yarn-error.log*
 tsconfig.tsbuildinfo
 /.contentlayer/
 web.config
+config.bat

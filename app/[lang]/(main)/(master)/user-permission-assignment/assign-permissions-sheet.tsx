@@ -227,7 +227,7 @@ export function AssignPermissionsSheet({
                               {(field.value || []).map((permissionId: number) => {
                                 const permission = permissions.find((p: any) => p.id === permissionId);
                                 return permission ? (
-                                  <Badge key={permissionId} variant="secondary">
+                                  <Badge key={permissionId} variant="outline">
                                     {permission.label || permission.name}
                                   </Badge>
                                 ) : null;

@@ -224,7 +224,7 @@ export function AssignRolesSheet({
                               {(field.value || []).map((roleId: number) => {
                                 const role = roles.find((r: any) => r.id === roleId);
                                 return role ? (
-                                  <Badge key={roleId} variant="secondary">
+                                  <Badge key={roleId} variant="outline">
                                     {role.name}
                                   </Badge>
                                 ) : null;

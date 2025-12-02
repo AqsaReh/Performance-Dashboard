@@ -93,7 +93,7 @@ export function UsersDataTable({
       cell: ({ row }) => {
         const count = row.original.permissions_count ?? (Array.isArray(row.original.permissions) ? row.original.permissions.length : 0);
         return (
-          <Badge variant="secondary" className="bg-muted">
+          <Badge variant="outline" className="bg-muted">
             {count}
           </Badge>
         );

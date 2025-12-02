@@ -29,7 +29,6 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
     height: 90,
     x: 5,
     y: 5,
-    aspect: aspect, // Add aspect to the crop object
   });
   const [completedCrop, setCompletedCrop] = useState<PixelCrop | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -90,8 +89,7 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
           width: 90, 
           height: 90, 
           x: 5, 
-          y: 5,
-          aspect: aspect 
+          y: 5
         });
         setCompletedCrop(null);
       } catch (error) {
@@ -131,6 +129,7 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
                 crop={crop}
                 onChange={(_, percentCrop) => setCrop(percentCrop)}
                 onComplete={(c) => setCompletedCrop(c)}
+                aspect={aspect}
                 className="max-h-96"
               >
                 <img
@@ -156,8 +155,7 @@ const ImageCropper: React.FC<ImageCropperProps> = ({
                       width: 90, 
                       height: 90, 
                       x: 5, 
-                      y: 5,
-                      aspect: aspect 
+                      y: 5
                     });
                     setCompletedCrop(null);
                   }}

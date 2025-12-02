@@ -109,7 +109,7 @@ export function UsersGridView({
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-xs text-muted-foreground">Permissions Count:</span>
-                    <Badge variant="secondary" className="text-xs">
+                    <Badge variant="outline" className="text-xs">
                       {permissionsCount}
                     </Badge>
                   </div>
